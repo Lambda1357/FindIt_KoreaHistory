@@ -18,6 +18,7 @@
       <Filter>Precompiled header</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MainProc.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Precompiled header">
