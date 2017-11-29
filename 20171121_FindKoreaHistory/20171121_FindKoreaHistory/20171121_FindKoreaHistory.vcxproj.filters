@@ -1,9 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Text Include="ReadMe.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="targetver.h" />
     <ClInclude Include="stdafx.h">
       <Filter>Precompiled header</Filter>
@@ -14,7 +11,12 @@
     <ClInclude Include="MainProc.h">
       <Filter>MainProc</Filter>
     </ClInclude>
-    <ClInclude Include="MouseInput.h" />
+    <ClInclude Include="MouseInput.h">
+      <Filter>MouseInput</Filter>
+    </ClInclude>
+    <ClInclude Include="EventHandler.h">
+      <Filter>EventHandler</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -24,7 +26,12 @@
     <ClCompile Include="MainProc.cpp">
       <Filter>MainProc</Filter>
     </ClCompile>
-    <ClCompile Include="MouseInput.cpp" />
+    <ClCompile Include="MouseInput.cpp">
+      <Filter>MouseInput</Filter>
+    </ClCompile>
+    <ClCompile Include="EventHandler.cpp">
+      <Filter>EventHandler</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Precompiled header">
@@ -36,5 +43,14 @@
     <Filter Include="MainProc">
       <UniqueIdentifier>{5e831d1f-e184-41c0-a3ab-b2793d6d0348}</UniqueIdentifier>
     </Filter>
+    <Filter Include="MouseInput">
+      <UniqueIdentifier>{3df29723-b4f9-4573-ab1f-ab8d3a96118c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EventHandler">
+      <UniqueIdentifier>{165ba749-96de-4644-beaf-41731de05e76}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
   </ItemGroup>
 </Project>

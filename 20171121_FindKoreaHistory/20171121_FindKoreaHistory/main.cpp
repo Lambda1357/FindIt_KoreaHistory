@@ -11,6 +11,7 @@ int main(int argc, char* argv[])
 	}
 
 	Game.Destroy();
+
     return 0;
 }
 

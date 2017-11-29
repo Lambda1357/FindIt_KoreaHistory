@@ -9,7 +9,8 @@ void MouseInput::Init()
 
 void MouseInput::Update()
 {
-	
+	prv_ClickState = cur_ClickState;
+	cur_ClickState = false;
 }
 
 void MouseInput::Destroy()

@@ -7,7 +7,7 @@ void MainProc::Init()
 	{
 		printf("SDL video init Failed! SDL_Error : %s\n", SDL_GetError());
 	}
-	pWindow = SDL_CreateWindow("찾아라! 뒤틀린 한국사", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, WINDOW_WIDTH, WINDOW_HEIGHT, SDL_WINDOW_SHOWN);
+	pWindow = SDL_CreateWindow("Find it! Reversed Korea History", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, WINDOW_WIDTH, WINDOW_HEIGHT, SDL_WINDOW_SHOWN);
 	if (pWindow == NULL)
 	{
 		printf("Window could not be created! SDL_Error: %s", SDL_GetError());
@@ -20,9 +20,12 @@ void MainProc::Init()
 
 bool MainProc::Update()
 {
-	SDL_PollEvent(&evnt);
-	if (evnt.type == SDL_QUIT) return false;
+	if (!evntHandler.HandleEvent()) return false;
 	return true;
+}
+
+void MainProc::Render()
+{
 }
 
 void MainProc::Destroy()
@@ -37,4 +40,8 @@ MainProc::MainProc()
 {
 	pWindow = NULL;
 	pScreen = NULL;
+}
+
+MainProc::~MainProc()
+{
 }

@@ -1,6 +1,6 @@
 #pragma once
 
-template <typename class T>
+template <typename T>
 class Singletone
 {
 protected:
