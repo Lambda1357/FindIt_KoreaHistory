@@ -8,17 +8,23 @@
     <ClInclude Include="stdafx.h">
       <Filter>Precompiled header</Filter>
     </ClInclude>
-    <ClInclude Include="MainProc.h" />
     <ClInclude Include="Singletone.h">
       <Filter>Template</Filter>
     </ClInclude>
+    <ClInclude Include="MainProc.h">
+      <Filter>MainProc</Filter>
+    </ClInclude>
+    <ClInclude Include="MouseInput.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>Precompiled header</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="MainProc.cpp" />
+    <ClCompile Include="MainProc.cpp">
+      <Filter>MainProc</Filter>
+    </ClCompile>
+    <ClCompile Include="MouseInput.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Precompiled header">
@@ -26,6 +32,9 @@
     </Filter>
     <Filter Include="Template">
       <UniqueIdentifier>{db4e4f6a-3d02-4a6b-9844-3a735e54951e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainProc">
+      <UniqueIdentifier>{5e831d1f-e184-41c0-a3ab-b2793d6d0348}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -18,6 +18,21 @@ void MainProc::Init()
 	}
 }
 
+bool MainProc::Update()
+{
+	SDL_PollEvent(&evnt);
+	if (evnt.type == SDL_QUIT) return false;
+	return true;
+}
+
+void MainProc::Destroy()
+{
+	SDL_FreeSurface(pScreen);
+	SDL_DestroyWindow(pWindow);
+
+	SDL_Quit();
+}
+
 MainProc::MainProc()
 {
 	pWindow = NULL;

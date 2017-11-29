@@ -10,10 +10,11 @@ class MainProc
 private:
 	SDL_Window* pWindow;
 	SDL_Surface* pScreen;
+	SDL_Event evnt;
 
 public:
 	void Init();
-	void Update();
+	bool Update();
 	void Render();
 	void Destroy();
 
