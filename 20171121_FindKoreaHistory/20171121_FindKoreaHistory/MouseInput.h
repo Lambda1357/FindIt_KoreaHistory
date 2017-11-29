@@ -17,7 +17,9 @@ public:
 		mPosition.y = y;
 	}
 
-	inline void OnClick() { cur_ClickState = true; }
+	inline void OnMouseDown() { cur_ClickState = true; }
+	inline void OnMouseUp() { cur_ClickState = false; }
+	bool IsClick(SDL_Rect chkBox);
 	void Destroy();
 
 };
