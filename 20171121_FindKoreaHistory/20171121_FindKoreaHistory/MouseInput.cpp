@@ -13,6 +13,15 @@ void MouseInput::Update()
 	cur_ClickState = false;
 }
 
+bool MouseInput::IsClick(SDL_Rect chkBox)
+{
+	if (cur_ClickState == true && prv_ClickState == false)
+	{
+		if (mPosition.x > chkBox.x&&mPosition.x < (chkBox.x + chkBox.w)&&)
+	}
+	else return false;
+}
+
 void MouseInput::Destroy()
 {
 	ReleaseInstance();
