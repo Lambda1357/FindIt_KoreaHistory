@@ -12,6 +12,8 @@ private:
 	SDL_Window* pWindow;
 	SDL_Surface* pScreen;
 	EventHandler evntHandler;
+	SDL_Surface* pTestSurface;
+	SDL_Rect testBox;
 
 public:
 	void Init();
