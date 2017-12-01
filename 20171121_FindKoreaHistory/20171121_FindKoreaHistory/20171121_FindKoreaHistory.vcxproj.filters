@@ -17,6 +17,9 @@
     <ClInclude Include="EventHandler.h">
       <Filter>EventHandler</Filter>
     </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>Object</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -48,6 +51,9 @@
     </Filter>
     <Filter Include="EventHandler">
       <UniqueIdentifier>{165ba749-96de-4644-beaf-41731de05e76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object">
+      <UniqueIdentifier>{aa6dba79-d4de-46b5-b28b-e3390e136ce1}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

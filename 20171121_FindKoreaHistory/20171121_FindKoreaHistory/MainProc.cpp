@@ -16,8 +16,6 @@ void MainProc::Init()
 	else
 	{
 		pScreen = SDL_GetWindowSurface(pWindow);
-		pTestSurface = SDL_LoadBMP("./HerosCat.bmp");
-		testBox = { 100, 100, 100, 70 };
 	}
 }
 
@@ -32,14 +30,12 @@ bool MainProc::Update()
 
 void MainProc::Render()
 {
-	SDL_BlitSurface(pTestSurface, NULL, pScreen, &testBox);
 
 	SDL_UpdateWindowSurface(pWindow);
 }
 
 void MainProc::Destroy()
 {
-	SDL_FreeSurface(pTestSurface);
 	SDL_FreeSurface(pScreen);
 	SDL_DestroyWindow(pWindow);
 
