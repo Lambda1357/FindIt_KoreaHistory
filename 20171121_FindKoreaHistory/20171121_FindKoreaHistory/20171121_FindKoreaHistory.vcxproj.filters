@@ -35,6 +35,9 @@
     <ClCompile Include="EventHandler.cpp">
       <Filter>EventHandler</Filter>
     </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Precompiled header">

@@ -3,13 +3,14 @@
 
 class Object
 {
-private:
-	SDL_Surface ObjectImage;
+protected:
+	SDL_Surface* ObjectImage;
 	SDL_Rect scrPosit;
-
+	
 public:
-	void Init();
-	void Update();
-	void Render();
-	void Destroy();
+	virtual void Init(char* imgAddr, SDL_Rect posit);
+	virtual void Update();
+	virtual void Render();
+	virtual void Destroy();
+
 };
