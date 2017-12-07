@@ -18,7 +18,10 @@
       <Filter>EventHandler</Filter>
     </ClInclude>
     <ClInclude Include="Object.h">
-      <Filter>Object</Filter>
+      <Filter>Object\Perent Class</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Scene\Perent Class</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -36,7 +39,10 @@
       <Filter>EventHandler</Filter>
     </ClCompile>
     <ClCompile Include="Object.cpp">
-      <Filter>Object</Filter>
+      <Filter>Object\Perent Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Scene\Perent Class</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -57,6 +63,15 @@
     </Filter>
     <Filter Include="Object">
       <UniqueIdentifier>{aa6dba79-d4de-46b5-b28b-e3390e136ce1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Perent Class">
+      <UniqueIdentifier>{e877a2e3-ad88-4512-b978-ae72561ea6ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{b87dbc61-4644-4964-ac64-232257a75a27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Perent Class">
+      <UniqueIdentifier>{515f5d4f-4fb1-4749-811f-ee449de5a7e5}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

@@ -1,4 +1,5 @@
 #include "stdafx.h"
+#include "MainProc.h"
 
 int main(int argc, char* argv[])
 {

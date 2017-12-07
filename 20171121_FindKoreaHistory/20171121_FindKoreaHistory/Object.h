@@ -9,8 +9,8 @@ protected:
 	
 public:
 	virtual void Init(char* imgAddr, SDL_Rect posit);
-	virtual void Update();
-	virtual void Render();
+	virtual void Update() {};
+	virtual void Render(SDL_Surface* scrSurface);
 	virtual void Destroy();
 
 };

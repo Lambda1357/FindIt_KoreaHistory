@@ -15,6 +15,8 @@ void MainProc::Init()
 	}
 	else
 	{
+		//Program Init goes here
+
 		pScreen = SDL_GetWindowSurface(pWindow);
 	}
 }
@@ -22,8 +24,6 @@ void MainProc::Init()
 bool MainProc::Update()
 {
 	if (!evntHandler.HandleEvent()) return false;
-	
-	if (MOUSEINPUT->IsClick(testBox)) return false;
 
 	return true;
 }
