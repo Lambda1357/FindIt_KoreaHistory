@@ -7,8 +7,14 @@
 
 #include "targetver.h"
 
+//C
 #include <stdio.h>
 #include <tchar.h>
+
+//Cpp
+#include <iostream>
+#include <vector>
+#include <map>
 
 //SDL
 #include <SDL.h>

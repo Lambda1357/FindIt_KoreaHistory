@@ -36,6 +36,7 @@ void MainProc::Render()
 
 void MainProc::Destroy()
 {
+	MOUSEINPUT->ReleaseInstance();
 	SDL_FreeSurface(pScreen);
 	SDL_DestroyWindow(pWindow);
 

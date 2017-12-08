@@ -12,16 +12,19 @@
       <Filter>MainProc</Filter>
     </ClInclude>
     <ClInclude Include="MouseInput.h">
-      <Filter>MouseInput</Filter>
+      <Filter>Framework\MouseInput</Filter>
     </ClInclude>
     <ClInclude Include="EventHandler.h">
-      <Filter>EventHandler</Filter>
+      <Filter>Framework\EventHandler</Filter>
     </ClInclude>
     <ClInclude Include="Object.h">
       <Filter>Object\Perent Class</Filter>
     </ClInclude>
     <ClInclude Include="Scene.h">
       <Filter>Scene\Perent Class</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>Framework\SceneManager</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -33,10 +36,10 @@
       <Filter>MainProc</Filter>
     </ClCompile>
     <ClCompile Include="MouseInput.cpp">
-      <Filter>MouseInput</Filter>
+      <Filter>Framework\MouseInput</Filter>
     </ClCompile>
     <ClCompile Include="EventHandler.cpp">
-      <Filter>EventHandler</Filter>
+      <Filter>Framework\EventHandler</Filter>
     </ClCompile>
     <ClCompile Include="Object.cpp">
       <Filter>Object\Perent Class</Filter>
@@ -52,15 +55,6 @@
     <Filter Include="Template">
       <UniqueIdentifier>{db4e4f6a-3d02-4a6b-9844-3a735e54951e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="MainProc">
-      <UniqueIdentifier>{5e831d1f-e184-41c0-a3ab-b2793d6d0348}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="MouseInput">
-      <UniqueIdentifier>{3df29723-b4f9-4573-ab1f-ab8d3a96118c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="EventHandler">
-      <UniqueIdentifier>{165ba749-96de-4644-beaf-41731de05e76}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Object">
       <UniqueIdentifier>{aa6dba79-d4de-46b5-b28b-e3390e136ce1}</UniqueIdentifier>
     </Filter>
@@ -72,6 +66,21 @@
     </Filter>
     <Filter Include="Scene\Perent Class">
       <UniqueIdentifier>{515f5d4f-4fb1-4749-811f-ee449de5a7e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{b52526e8-4690-4411-8096-473d756c2ee4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\EventHandler">
+      <UniqueIdentifier>{165ba749-96de-4644-beaf-41731de05e76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\MouseInput">
+      <UniqueIdentifier>{3df29723-b4f9-4573-ab1f-ab8d3a96118c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainProc">
+      <UniqueIdentifier>{5e831d1f-e184-41c0-a3ab-b2793d6d0348}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\SceneManager">
+      <UniqueIdentifier>{1c914daa-7a3a-49a8-b4a3-f7a288f95ce8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
