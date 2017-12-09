@@ -2,24 +2,20 @@
 
 #include "Singletone.h"
 #include "Scene.h"
-
-enum SceneNumber
-{
-	SN_START,
-	SN_INGAME,
-	SN_RESULT
-};
+#include "SceneNumber.h"
 
 class SceneManager : public Singletone<SceneManager>
 {
 private:
 	std::map<SceneNumber, Scene*> sceneMap;
+	SceneNumber curSn;
 
 public:
 	void Init();
 	void Update();
 	void Render(SDL_Surface* scrSurface);
 	void Destroy();
+	void SetCurrentScene(SceneNumber sn);
 };
 
 #define SCENEMANAGER SceneManager::GetInstance()

@@ -20,14 +20,20 @@
     <ClInclude Include="Object.h">
       <Filter>Object\Perent Class</Filter>
     </ClInclude>
-    <ClInclude Include="Scene.h">
-      <Filter>Scene\Perent Class</Filter>
-    </ClInclude>
     <ClInclude Include="SceneManager.h">
       <Filter>Framework\SceneManager</Filter>
     </ClInclude>
     <ClInclude Include="Button.h">
-      <Filter>Object</Filter>
+      <Filter>Object\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Scene\Perent Class</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneNumber.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneChangeBehavior.h">
+      <Filter>Object\Button\Behavior\SceneChangeBehavior</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -47,14 +53,17 @@
     <ClCompile Include="Object.cpp">
       <Filter>Object\Perent Class</Filter>
     </ClCompile>
-    <ClCompile Include="Scene.cpp">
-      <Filter>Scene\Perent Class</Filter>
-    </ClCompile>
     <ClCompile Include="SceneManager.cpp">
       <Filter>Framework\SceneManager</Filter>
     </ClCompile>
     <ClCompile Include="Button.cpp">
-      <Filter>Object</Filter>
+      <Filter>Object\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Scene\Perent Class</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneChangeBehavior.cpp">
+      <Filter>Object\Button\Behavior\SceneChangeBehavior</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -63,15 +72,6 @@
     </Filter>
     <Filter Include="Object">
       <UniqueIdentifier>{aa6dba79-d4de-46b5-b28b-e3390e136ce1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Object\Perent Class">
-      <UniqueIdentifier>{e877a2e3-ad88-4512-b978-ae72561ea6ab}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Scene">
-      <UniqueIdentifier>{b87dbc61-4644-4964-ac64-232257a75a27}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Scene\Perent Class">
-      <UniqueIdentifier>{515f5d4f-4fb1-4749-811f-ee449de5a7e5}</UniqueIdentifier>
     </Filter>
     <Filter Include="Framework">
       <UniqueIdentifier>{b52526e8-4690-4411-8096-473d756c2ee4}</UniqueIdentifier>
@@ -93,6 +93,24 @@
     </Filter>
     <Filter Include="Header\Precompiled header">
       <UniqueIdentifier>{86fb561a-be24-49fa-951f-0f765b9a947d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Button">
+      <UniqueIdentifier>{0e93060f-09dd-4ed7-b59e-4e82117ab95a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{5076b9fb-d170-4952-b5af-39281f3f771c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Button\Behavior">
+      <UniqueIdentifier>{bd0ce8e6-8824-40bd-ab76-228d81c3dc57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Perent Class">
+      <UniqueIdentifier>{8f050ebb-0e4c-4832-a184-4bfd4572282d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Button\Behavior\SceneChangeBehavior">
+      <UniqueIdentifier>{ff890f9d-427c-4061-a8a1-16f7d4aeac4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Perent Class">
+      <UniqueIdentifier>{e877a2e3-ad88-4512-b978-ae72561ea6ab}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
