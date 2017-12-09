@@ -3,7 +3,7 @@
   <ItemGroup>
     <ClInclude Include="targetver.h" />
     <ClInclude Include="stdafx.h">
-      <Filter>Precompiled header</Filter>
+      <Filter>Header\Precompiled header</Filter>
     </ClInclude>
     <ClInclude Include="Singletone.h">
       <Filter>Template</Filter>
@@ -26,10 +26,13 @@
     <ClInclude Include="SceneManager.h">
       <Filter>Framework\SceneManager</Filter>
     </ClInclude>
+    <ClInclude Include="Button.h">
+      <Filter>Object</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
-      <Filter>Precompiled header</Filter>
+      <Filter>Header\Precompiled header</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainProc.cpp">
@@ -47,11 +50,14 @@
     <ClCompile Include="Scene.cpp">
       <Filter>Scene\Perent Class</Filter>
     </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>Framework\SceneManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="Precompiled header">
-      <UniqueIdentifier>{86fb561a-be24-49fa-951f-0f765b9a947d}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Template">
       <UniqueIdentifier>{db4e4f6a-3d02-4a6b-9844-3a735e54951e}</UniqueIdentifier>
     </Filter>
@@ -81,6 +87,12 @@
     </Filter>
     <Filter Include="Framework\SceneManager">
       <UniqueIdentifier>{1c914daa-7a3a-49a8-b4a3-f7a288f95ce8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header">
+      <UniqueIdentifier>{ebf5527c-549c-41a1-bfda-620b44cceb6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\Precompiled header">
+      <UniqueIdentifier>{86fb561a-be24-49fa-951f-0f765b9a947d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
