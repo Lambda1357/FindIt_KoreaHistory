@@ -23,7 +23,7 @@ void SceneManager::Render(SDL_Surface* scrSurface)
 
 void SceneManager::Destroy()
 {
-	for (std::map<SceneNumber, Scene*>::iterator iter = sceneMap.begin; iter != sceneMap.end; iter++) iter->second->Destroy();
+	for (std::map<SceneNumber, Scene*>::iterator iter = sceneMap.begin(); iter != sceneMap.end(); iter++) iter->second->Destroy();
 	ReleaseInstance();
 }
 
