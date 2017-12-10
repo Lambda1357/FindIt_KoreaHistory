@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "MainProc.h"
 #include "MouseInput.h"
+#include "SceneManager.h"
 
 void MainProc::Init()
 {
@@ -16,6 +17,7 @@ void MainProc::Init()
 	else
 	{
 		//Program Init goes here
+		SCENEMANAGER->Init();
 
 		pScreen = SDL_GetWindowSurface(pWindow);
 	}
@@ -25,17 +27,21 @@ bool MainProc::Update()
 {
 	if (!evntHandler.HandleEvent()) return false;
 
+	SCENEMANAGER->Update();
+
 	return true;
 }
 
 void MainProc::Render()
 {
-
+	SCENEMANAGER->Render(pScreen);
+	
 	SDL_UpdateWindowSurface(pWindow);
 }
 
 void MainProc::Destroy()
 {
+	SCENEMANAGER->Destroy();
 	MOUSEINPUT->ReleaseInstance();
 	SDL_FreeSurface(pScreen);
 	SDL_DestroyWindow(pWindow);

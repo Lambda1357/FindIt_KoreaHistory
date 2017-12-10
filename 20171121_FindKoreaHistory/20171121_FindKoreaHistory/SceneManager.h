@@ -16,6 +16,7 @@ public:
 	void Render(SDL_Surface* scrSurface);
 	void Destroy();
 	void SetCurrentScene(SceneNumber sn);
+
 };
 
 #define SCENEMANAGER SceneManager::GetInstance()

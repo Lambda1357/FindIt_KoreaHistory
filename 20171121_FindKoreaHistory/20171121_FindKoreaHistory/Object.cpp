@@ -5,6 +5,7 @@ void Object::Init(char* imgAddr, SDL_Rect posit)
 {
 	ObjectImage = SDL_LoadBMP(imgAddr);
 
+	scrPosit = posit;
 }
 
 void Object::Render(SDL_Surface* scrSurface)

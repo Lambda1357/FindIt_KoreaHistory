@@ -1,11 +1,12 @@
 #pragma once
 
 #include "Scene.h"
+#include "Button.h"
 
 class StartScene : public Scene
 {
 private:
-
+	std::vector<Object*> v_ObjectList;
 
 public:
 	virtual void Init(char* ImgAdr);

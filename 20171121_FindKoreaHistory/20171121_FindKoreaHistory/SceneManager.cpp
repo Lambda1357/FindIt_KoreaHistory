@@ -3,9 +3,11 @@
 
 void SceneManager::Init()
 {
-	//add a Scene to SceneMap
+	//add a Scene to sceneMap
+	sceneMap[SN_START] = new StartScene;
 
 	//Scene Initialize
+	sceneMap[SN_START]->Init("./img/backgroundStart.bmp");
 
 	//Set Current SceneNumber to Start Scene
 	curSn = SN_START;
@@ -29,5 +31,9 @@ void SceneManager::Destroy()
 
 void SceneManager::SetCurrentScene(SceneNumber sn)
 {
-	curSn = sn;
+	auto iter = sceneMap.find(sn);
+	if (iter != sceneMap.end())
+		curSn = sn;
+	else
+		printf("%d번 씬에서 %d번 씬으로 이동할수 없습니다!\n", curSn, sn);
 }
