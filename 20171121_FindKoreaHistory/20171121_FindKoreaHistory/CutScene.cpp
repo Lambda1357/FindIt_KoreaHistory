@@ -3,8 +3,12 @@
 
 void CutScene::Init(char* imgAdr)
 {
+	SDL_Rect tmp = { 100,100,70,70 };
 	BackgroundInit("./img/backgroundStart.bmp");
 
+	indexPrev.Init("./img/buttonPause", tmp);
+	tmp.x = 200;
+	indexNext.Init("./img/buttonPause", tmp);
 }
 
 void CutScene::Update()
