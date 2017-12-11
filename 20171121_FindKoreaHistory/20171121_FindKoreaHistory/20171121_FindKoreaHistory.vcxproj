@@ -146,6 +146,7 @@
   <ItemGroup>
     <ClInclude Include="Behaviors.h" />
     <ClInclude Include="Button.h" />
+    <ClInclude Include="CutScene.h" />
     <ClInclude Include="EventHandler.h" />
     <ClInclude Include="MainProc.h" />
     <ClInclude Include="MouseInput.h" />
@@ -161,6 +162,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Button.cpp" />
+    <ClCompile Include="CutScene.cpp" />
     <ClCompile Include="EventHandler.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainProc.cpp" />

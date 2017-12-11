@@ -33,13 +33,16 @@
       <Filter>Object\Button\Behavior\SceneChangeBehavior</Filter>
     </ClInclude>
     <ClInclude Include="StartScene.h">
-      <Filter>Scene\StartScene</Filter>
+      <Filter>Scene\Scene Class\StartScene</Filter>
     </ClInclude>
     <ClInclude Include="SceneNumber.h">
       <Filter>Scene</Filter>
     </ClInclude>
     <ClInclude Include="Behaviors.h">
       <Filter>Object\Button\Behavior</Filter>
+    </ClInclude>
+    <ClInclude Include="CutScene.h">
+      <Filter>Scene\Scene Class\CutScene</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -72,7 +75,10 @@
       <Filter>Object\Button\Behavior\SceneChangeBehavior</Filter>
     </ClCompile>
     <ClCompile Include="StartScene.cpp">
-      <Filter>Scene\StartScene</Filter>
+      <Filter>Scene\Scene Class\StartScene</Filter>
+    </ClCompile>
+    <ClCompile Include="CutScene.cpp">
+      <Filter>Scene\Scene Class\CutScene</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -121,8 +127,14 @@
     <Filter Include="Object\Perent Class">
       <UniqueIdentifier>{e877a2e3-ad88-4512-b978-ae72561ea6ab}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Scene\StartScene">
+    <Filter Include="Scene\Scene Class">
+      <UniqueIdentifier>{39dc7ccb-f48e-4ba5-a7b3-9c7abfb5e80d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Scene Class\StartScene">
       <UniqueIdentifier>{99b29029-4fbf-4b1f-bdd3-b32cb071e8c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Scene Class\CutScene">
+      <UniqueIdentifier>{d890c2da-f7bd-4689-89dd-313b5af5e80d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
