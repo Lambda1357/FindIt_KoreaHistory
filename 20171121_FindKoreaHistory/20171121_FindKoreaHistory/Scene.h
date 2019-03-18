@@ -11,7 +11,7 @@ protected:
 
 public:
 	virtual void Init(char* ImgAdr) = 0;
-	virtual void Update() = 0;
+	virtual int Update() = 0;
 	virtual void Render(SDL_Surface* scrSurface) = 0;
 	virtual void Destroy() = 0;
 

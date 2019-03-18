@@ -5,6 +5,9 @@ void Object::Init(char* imgAddr, SDL_Rect posit)
 {
 	ObjectImage = SDL_LoadBMP(imgAddr);
 
+	if (ObjectImage == NULL)
+		printf("이미지 없음\n");
+
 	scrPosit = posit;
 }
 

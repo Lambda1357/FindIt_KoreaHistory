@@ -13,4 +13,8 @@ public:
 	virtual void Render(SDL_Surface* scrSurface);
 	virtual void Destroy();
 
+	void SetPos(SDL_Rect _pos)
+	{
+		scrPosit = _pos;
+	}
 };

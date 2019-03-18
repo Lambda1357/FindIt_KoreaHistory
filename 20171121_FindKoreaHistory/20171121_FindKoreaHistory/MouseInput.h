@@ -19,6 +19,9 @@ public:
 
 	inline void OnMouseDown() { cur_ClickState = true; }
 	inline void OnMouseUp() { cur_ClickState = false; }
+	inline bool GetClick() { return cur_ClickState; }
+	inline bool GetPrevClick() { return prv_ClickState; }
+	inline SDL_Point GetPos() { return mPosition; }
 	bool IsClick(SDL_Rect chkBox);
 	void Destroy();
 

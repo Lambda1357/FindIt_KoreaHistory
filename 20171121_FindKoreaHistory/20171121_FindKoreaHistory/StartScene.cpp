@@ -5,13 +5,13 @@
 
 void StartScene::Init(char* ImgAdr)
 {
-	SDL_Rect r_tmpStart = { 515,456,250,80 };
-	SDL_Rect r_tmpHowto = { 515,556,250,80 };
+	SDL_Rect r_tmpStart = { 875,456,250,80 };
+	SDL_Rect r_tmpHowto = { 875,556,250,80 };
 	Button* tmp;
 	BackgroundInit(ImgAdr);
 
 	tmp = new Button;
-	tmp->Init("./img/ButtonStart.bmp", r_tmpStart, new SceneChangeBehavior(SN_INGAME));
+	tmp->Init("./img/ButtonStart.bmp", r_tmpStart, new SceneChangeBehavior(SN_CUTSCENE1));
 	v_ObjectList.push_back(tmp);
 
 	tmp = new Button;
@@ -19,15 +19,18 @@ void StartScene::Init(char* ImgAdr)
 	v_ObjectList.push_back(tmp);
 }
 
-void StartScene::Update()
+int StartScene::Update()
 {
 	auto iter = v_ObjectList.begin();
 	while (iter != v_ObjectList.end())
 	{
 		(*iter)->Update();
 
+
 		iter++;
 	}
+
+	return 0;
 }
 
 void StartScene::Render(SDL_Surface* scrSurface)

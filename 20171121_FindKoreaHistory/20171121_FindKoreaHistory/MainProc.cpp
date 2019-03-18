@@ -2,9 +2,14 @@
 #include "MainProc.h"
 #include "MouseInput.h"
 #include "SceneManager.h"
+#include "InterfaceManager.h"
+#include "ResourceManager.h"
+#include "KeyInput.h"
 
 void MainProc::Init()
 {
+	srand((unsigned)time(NULL));
+
 	if (SDL_Init(SDL_INIT_VIDEO) < 0)
 	{
 		printf("SDL video init Failed! SDL_Error : %s\n", SDL_GetError());
@@ -16,9 +21,11 @@ void MainProc::Init()
 	}
 	else
 	{
+		TTF_Init();
 		//Program Init goes here
 		SCENEMANAGER->Init();
-
+		INTERFACEMANAGER->Initialize();
+		RESOURCEMANAGER->ResetSource();
 		pScreen = SDL_GetWindowSurface(pWindow);
 	}
 }
@@ -42,11 +49,14 @@ void MainProc::Render()
 void MainProc::Destroy()
 {
 	SCENEMANAGER->Destroy();
+	INTERFACEMANAGER->Release();
 	MOUSEINPUT->ReleaseInstance();
+	KEYINPUT->ReleaseInstance();
 	SDL_FreeSurface(pScreen);
 	SDL_DestroyWindow(pWindow);
 
 	SDL_Quit();
+	TTF_Quit();
 }
 
 MainProc::MainProc()

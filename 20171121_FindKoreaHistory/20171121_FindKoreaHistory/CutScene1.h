@@ -1,17 +1,19 @@
 #pragma once
-
 #include "Scene.h"
-#include "Button.h"
 
-class StartScene : public Scene
+class Object;
+class CCutScene1 :
+	public Scene
 {
 private:
-	std::vector<Object*> v_ObjectList;
-
+	Object* m_Button;
 public:
 	virtual void Init(char* ImgAdr);
 	virtual int Update();
 	virtual void Render(SDL_Surface* scrSurface);
 	virtual void Destroy();
-
+public:
+	CCutScene1();
+	virtual ~CCutScene1();
 };
+
